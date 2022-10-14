@@ -44,34 +44,34 @@
           placeholder="Search for any IP address or domain"
           id="domain"
         />
-        <button type="submit" id="btn">
+        <button type="submit" id="btn" onclick="trackIP()">
           <img src="./images/icon-arrow.svg" alt="" />
         </button>
       </div>
       <div class="geo-location-container">
         <div class="geo-content">
           <p>IP ADDRESS</p>
-          <h4 id="ip-address">192.212.174.101</h4>
+          <h4 id="ip-address">-</h4>
         </div>
         <div class="side-border"></div>
         <div class="geo-content">
           <p>LOCATION</p>
-          <h4 id="location">Broolyn,NY</h4>
+          <h4 id="location">-</h4>
         </div>
         <div class="side-border"></div>
         <div class="geo-content">
           <p>TIMEZONE</p>
-          <h4 id="timezone">UTC-05:00</h4>
+          <h4 id="timezone">-</h4>
         </div>
         <div class="side-border"></div>
         <div class="geo-content">
           <p>ISP</p>
-          <h4 id="isp">SpaceX Starlink</h4>
+          <h4 id="isp">-</h4>
         </div>
       </div>
     </section>
     <div id="map"></div>
 
-    <script src="script.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
