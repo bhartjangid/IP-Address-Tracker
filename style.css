@@ -97,3 +97,32 @@ h1 {
     width: 100%;
     height: 62vh;
 }
+
+@media (max-width: 550px) {
+.searchbar-container {
+    margin: 1rem auto 0;
+    width: 90%;
+}
+.side-border {
+    height: 1px;
+    width: 70%;
+    margin: 10px 0;
+}
+.geo-location-container {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 90px;
+}
+.geo-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+}
+#map {
+    height: 73vh;
+}
+}
