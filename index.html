@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>IP Address Tracker</h1>
+      <div class="searchbar-container">
+        <input
+          type="search"
+          placeholder="Search for any IP address or domain"
+          id="domain"
+        />
+        <button type="submit" id="btn">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+      <div class="geo-location-container">
+        <div class="geo-content">
+          <p>IP ADDRESS</p>
+          <h4 id="ip-address">192.212.174.101</h4>
+        </div>
+        <div class="side-border"></div>
+        <div class="geo-content">
+          <p>LOCATION</p>
+          <h4 id="location">Broolyn,NY</h4>
+        </div>
+        <div class="side-border"></div>
+        <div class="geo-content">
+          <p>TIMEZONE</p>
+          <h4 id="timezone">UTC-05:00</h4>
+        </div>
+        <div class="side-border"></div>
+        <div class="geo-content">
+          <p>ISP</p>
+          <h4 id="isp">SpaceX Starlink</h4>
+        </div>
+      </div>
+    </section>
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
